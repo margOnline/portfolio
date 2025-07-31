@@ -20,10 +20,10 @@ html {
   box-sizing: border-box;
   color-scheme: light dark;
 }
-html:has(#mode-switcher #light:checked){
+html:has(#mode-switcher #light:checked) {
   color-scheme: light;
 }
-html:has(#mode-switcher #dark:checked){
+html:has(#mode-switcher #dark:checked) {
   color-scheme: dark;
 }
 *,
@@ -34,7 +34,7 @@ html:has(#mode-switcher #dark:checked){
 /* Basic page set to our font size and font family. Link to the font family in CodePen under Settings - CSS - External stylesheets and pens. */
 body {
   font-size: var(--base-font-size);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--ld-bkgd);
   color: var(--ld-text);
 }
@@ -109,7 +109,7 @@ main {
   text-align: center;
 }
 main h2 {
-   margin: 2rem 0;
+  margin: 2rem 0;
 }
 .positions {
   display: flex;
@@ -210,38 +210,38 @@ footer .icons .social:hover {
     margin-left: -4.25em;
     padding-left: 5em;
   }
-  #mode-switcher:focus-within label:first-of-type:after{
+  #mode-switcher:focus-within label:first-of-type:after {
     box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--marina);
   }
   #mode-switcher label:first-of-type:before,
-  #mode-switcher label:first-of-type:after{
+  #mode-switcher label:first-of-type:after {
     border: 1px solid var(--onyx);
-    content: "";
+    content: '';
     height: 2em;
     overflow: hidden;
     pointer-events: none;
     position: absolute;
     vertical-align: middle;
   }
-  #mode-switcher label:first-of-type:before{
+  #mode-switcher label:first-of-type:before {
     background: var(--white);
     border: 1px solid var(--onyx);
     border-radius: 100%;
     position: absolute;
     right: -0.075em;
     transform: translateX(0em);
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     width: 2em;
     z-index: 2;
   }
-  #mode-switcher label:first-of-type:after{
+  #mode-switcher label:first-of-type:after {
     background: #777;
     border-radius: 1em;
     margin: 0 1em;
-    transition: background .2s ease-in-out;
+    transition: background 0.2s ease-in-out;
     width: 4em;
   }
-  #mode-switcher input:first-of-type:checked ~ label:first-of-type:after{
+  #mode-switcher input:first-of-type:checked ~ label:first-of-type:after {
     background: var(--marina);
   }
   #mode-switcher input:first-of-type:checked ~ label:first-of-type:before {
@@ -252,7 +252,7 @@ footer .icons .social:hover {
   }
 }
 
-@media(min-width: 750px) {
+@media (min-width: 750px) {
   :root {
     --base-font-size: 1.125rem;
   }
@@ -278,13 +278,13 @@ footer .icons .social:hover {
     text-align: left;
   }
   .footer-text {
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   #mode-switcher {
     justify-content: flex-end;
   }
 }
-@media(min-width: 850px) {
+@media (min-width: 850px) {
   main {
     text-align: left;
   }
